@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/websiteFragment">
+    <fragment
+        android:id="@+id/websiteFragment"
+        android:name="com.example.madlevel3task2.WebsiteFragment"
+        android:label="fragment_website"
+        tools:layout="@layout/fragment_website">
+        <action
+            android:id="@+id/action_websiteFragment_to_addWebsiteFragment"
+            app:destination="@id/addWebsiteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addWebsiteFragment"
+        android:name="com.example.madlevel3task2.AddWebsiteFragment"
+        android:label="fragment_add_website"
+        tools:layout="@layout/fragment_add_website" />
+</navigation>
